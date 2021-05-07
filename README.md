@@ -66,10 +66,23 @@ Place recording every trade decision made by individuals. Including selling-pric
 ![Admin_stockprice](/images/Admin_stockprice.png)
 Place to trace the current stock price of every single stock and the remaining free shares it has.
 
+<br>
+<br>
+<br>
+<br>
 
+# Functions 
 
+<br>
+<br>
 
+### Auto-matching transaction
+Trade data in tradefield will be check after period of time. And the system will auto matching buyer's and seller's transaction and free the money to their account.
 
+<br>
+<br>
 
+### Random-changing StockPrice
+random changing stock price below 7% rate in a non-certain period, by using the background-task packages and 'while true' method, system perform enough randomness to make it more like a real world application. 
 
 
