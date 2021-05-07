@@ -26,3 +26,11 @@ The website create for NSYSU 2021 BM camp
 <br>
 <br>
 <br>
+
+
+# Intro
+
+### Create SuperUser by typing [ python manage.py createsuperuser ]. 
+### After going into the directory, use [ python manage.py runserver ] at terminal to run the whole project
+### Finally, Typing [ python manage.py process_tasks ] to run background code 
+
