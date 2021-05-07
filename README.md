@@ -52,9 +52,15 @@
 ![Admin_account](/images/Admin_account.png)
 Place With Email, username, passward, shares, money holded.
 
+<br>
+<br>
+
 ### TradeField
 ![Admin_tradefield](/images/Admin_tradefield.png)
 Place recording every trade decision made by individuals. Including selling-price and purchasing-price, buyer's and seller's id, Company etc.
+
+<br>
+<br>
 
 ### StockPrice
 ![Admin_stockprice](/images/Admin_stockprice.png)
