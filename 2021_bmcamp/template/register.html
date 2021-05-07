@@ -1,0 +1,49 @@
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'css/register.css' %}">
+
+<body id = background style = "background-image:url({% static 'login/background.jpeg'%});">
+<div id = layer>
+
+  <div id = panel>
+    <form method = 'post'> {% csrf_token %}
+
+      <ui id = input-list>
+
+          <img style="height: 20%;width:17%;border-radius: 50px; margin-bottom: 10%;" src ={% static 'register/human.jpg' %}>
+
+          <li>
+              <input type="email" name="email" id = "input-email" placeholder="Email address" required autofocus>
+          </li>
+          <li>
+              <input type="text" name="username" id = "input-username" placeholder="Username" required >
+          </li>
+          <li>
+              <input type="password" name="password1" id = "input-password1" placeholder="Password" required >
+          </li>
+          <li>
+              <input type="password" name="password2" id = "input-password2" placeholder="Confirmed Password" required >
+          </li>
+          <div id = 'error_messeges'>
+        {% for field in registration_form %}
+                    <p>
+                 {% for error in field.errors %}
+                    <p>{{ error }}</p>
+                 {% endfor %}
+                    </p>
+                 {% endfor %}
+
+                 {% if registration_form.non_field_errors %}
+                     <p>{{ registration_form.non_field_errors }}</p>
+                 {% endif %}
+        </div>
+          </li>
+          <button type="summit" id = 'summit_button'>註冊</button>
+          <li>
+        </ui>
+
+        </form>
+  </div>
+
+
+</div>
+</body>

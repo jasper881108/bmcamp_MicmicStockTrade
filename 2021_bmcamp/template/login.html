@@ -1,0 +1,21 @@
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'css/login.css' %}">
+<body id = background style = "background-image:url({% static 'login/background.jpeg'%});">
+<div id = layer>
+    <div id = panel>
+<form method="post"> {% csrf_token %}
+    <ui  id = input-list>
+        <img id = 'pic' src ={% static 'login/icon.jpeg' %}>
+       <li>
+           <input  type="email" name="email" id = "login-email" placeholder="Email address" required autofocus>
+       </li>
+       <li>
+           <input type="password" name="password" id = "login-password" placeholder="Password" required >
+       </li>
+       <li>
+           <button type="submit" id = 'summit_button'>登入</button>
+       </li>
+    </ui>
+</form>
+    </div>
+</div>

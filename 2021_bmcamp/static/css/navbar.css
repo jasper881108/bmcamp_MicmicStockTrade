@@ -1,0 +1,27 @@
+.menu-right{
+    width: 20%;
+    float: right;
+    list-style: none;
+    display: inline-block;
+}
+.menu-right > li { list-style: none; float:right;width:33%;}
+.menu-right > li > a{
+	margin-top: 10px;
+	padding :10px;
+	text-decoration: none;
+	font-weight: normal;
+	font-size: 20px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	-webkit-transition: all 0.25s linear;
+	-moz-transition: all 0.25s linear;
+	-o-transition: all 0.25s linear;
+	transition: all 0.25s linear;
+	color :white;
+
+}
+.menu-right > li > a:hover, .menu-right > li > a:focus{
+	border-radius: 10px;
+    border:2px solid white;
+}
