@@ -1,5 +1,6 @@
 # bmcamp_MicmicStockTrade
-The website create for NSYSU 2021 BM camp
+
+### The website create for NSYSU 2021 BM camp, notice that every stock here is FAKE!!
 
 <br>
 <br>
@@ -10,7 +11,7 @@ The website create for NSYSU 2021 BM camp
 
 ### Backend             -     Django
 ### DataVisiualize      -     Plotly & Dash
-### DataBase            -     Sqlite(Django built-in DB)
+### DataBase            -     Sqlite3(Django built-in DB)
 
 # Product demo
 
@@ -30,7 +31,58 @@ The website create for NSYSU 2021 BM camp
 
 # Intro
 
+<br>
+<br>
+
 ### Create SuperUser by typing [ python manage.py createsuperuser ]. 
 ### After going into the directory, use [ python manage.py runserver ] at terminal to run the whole project
 ### Finally, Typing [ python manage.py process_tasks ] to run background code 
+
+<br>
+<br>
+<br>
+<br>
+
+# Models explain
+
+<br>
+<br>
+
+### Account 
+![Admin_account](/images/Admin_account.png)
+Place With Email, username, passward, shares, money holded.
+
+<br>
+<br>
+
+### TradeField
+![Admin_tradefield](/images/Admin_tradefield.png)
+Place recording every trade decision made by individuals. Including selling-price and purchasing-price, buyer's and seller's id, Company etc.
+
+<br>
+<br>
+
+### StockPrice
+![Admin_stockprice](/images/Admin_stockprice.png)
+Place to trace the current stock price of every single stock and the remaining free shares it has.
+
+<br>
+<br>
+<br>
+<br>
+
+# Functions 
+
+<br>
+<br>
+
+### Auto-matching transaction
+Trade data in tradefield will be check after period of time. And the system will auto matching buyer's and seller's transaction and free the money to their account.
+
+<br>
+<br>
+
+### Random-changing StockPrice
+random changing stock price below 7% rate in a non-certain period, by using the background-task packages and 'while true' method, system perform enough randomness to make it more like a real world application. 
+
 
